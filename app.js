@@ -1,5 +1,4 @@
 var rates = {};
-var monto = {};
 var resultado = {};
 $(function(){
 		
@@ -16,11 +15,13 @@ $(function(){
 
 	});
 
-	$('.convert').on('click', function(e){
+	$('button').on('click', function(e){
 		e.preventDefault();
-		monto = $('.cambio').val()
-		resultado = (monto / datos.dolar.valor ;
-		$('.divisa .usd').text(resultado.toFixed(2));
+		var currency = $('.indicador.usd').text();
+		var monto = $('input').val();
+		$('.divisa.usd').text(monto / rates.dolar.valor .toFixed(0));
+
+
 	});
 
 		
