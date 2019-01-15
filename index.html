@@ -17,16 +17,61 @@
 </head>
 
 <body>
-
-
+	<div class="container">
+		<div class="row col-md-5">
+			<h2>PRECIO DEL DÍA</h2>
+			<table class="table">
+				<tr>
+					<th>DÓLAR</th>
+					<th>EURO</th>
+					<th>UTM</th>
+					<th>UF</th>
+				</tr>
+				<tr>
+					<td class="indicador usd"></td>
+					<td class="indicador euro"></td>
+					<td class="indicador utm"></td>
+					<td class="indicador uf"></td>
+				</tr>
+				
+			</table>
+		</div>
+		
+	<div class="row col-md-6 col-md-offset-1">
+		<h2>CONVERSIÒN DE DIVISAS</h2>
+			<form class="form-inline">
+			  	<div class="form-group">
+				 	<input type="number" class="form-control cambio" id="monto" placeholder="Ingresa Monto en Pesos Chilenos">
+				 	</div>
+				 	<button type="submit" class="btn btn-primary convert">Convertir</button>
+			</form>
+			
+			<table class="table convertidor col-md-4">
+				<tr>
+					<th>DÓLAR</th>
+					<th>EURO</th>
+					<th>UTM</th>
+					<th>UF</th>
+				</tr>
+				<tr>
+					<td class="divisa usd"></td>
+					<td class="divisa euro"></td>
+					<td class="divisa utm"></td>
+					<td class="divisa uf"></td>
+				</tr>
+				
+			</table>
+		</div>
+	</div>
+	
 
 
 	<!-- Jquery 3.3.1 -->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- FontAwesome 5 -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
 
 	<!-- Script Js -->
 	<script src="app.js"></script>
